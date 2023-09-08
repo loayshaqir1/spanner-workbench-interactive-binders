@@ -7,7 +7,6 @@ __all__ = ['CSV_DELIMITER', 'PREDEFINED_IE_FUNCS', 'STRING_PATTERN', 'logger', '
 # %% ../../../../../../nbs/19_session.ipynb 3
 import csv
 import logging
-import os
 import re
 from pathlib import Path
 from typing import Tuple, List, Union, Optional, Callable, Type, Iterable, no_type_check, Sequence
@@ -16,7 +15,6 @@ from typing import Tuple, List, Union, Optional, Callable, Type, Iterable, no_ty
 from lark.lark import Lark
 from pandas import DataFrame
 from tabulate import tabulate
-import os
 
 # %% ../../../../../../nbs/19_session.ipynb 7
 from .engine import *
@@ -249,8 +247,9 @@ class Session:
         @return: Grammar from grammar file in string format.
         """
 
-        grammar_file_path = Path(os.path.join(os.getcwd(),'spanner_workbench','src','rgxlog_interpreter','src','rgxlog','grammar'))
-        with open(grammar_file_path / GRAMMAR_FILE_NAME, 'r') as grammar_file:
+        #grammar_file_path = Path(os.path.join(os.getcwd(),'spanner_workbench','src','rgxlog_interpreter','src','rgxlog','grammar'))
+        grammar_file_path = '/drive/spanner_workbench/src/rgxlog_interpreter/src/rgxlog/grammar/grammar.lark'
+        with open(grammar_file_path, 'r') as grammar_file:
             return grammar_file.read()
 
     def _run_passes(self, lark_tree: LarkNode, pass_list: list) -> None:

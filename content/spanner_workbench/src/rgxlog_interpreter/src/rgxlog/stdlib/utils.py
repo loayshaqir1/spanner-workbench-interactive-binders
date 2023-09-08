@@ -74,7 +74,6 @@ def run_cli_command(command: str, stderr: bool = False, shell: bool = False, tim
         logger.info(f"stderr from process {command_list[0]}: {process_stderr}")
 
 # %% ../../../../../../nbs/14_utils.ipynb 7
-import os
 def download_file_from_google_drive(file_id: str, destination: Path) -> None:
     """
     Downloads a file from google drive.

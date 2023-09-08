@@ -17,7 +17,6 @@ from pathlib import Path
 from subprocess import Popen, PIPE
 from sys import platform
 from typing import Tuple, List, Union, Iterable, Sequence, no_type_check, Callable, Optional
-import os
 
 from ..engine.datatypes.primitive_types import DataTypes, Span
 from .utils import run_cli_command

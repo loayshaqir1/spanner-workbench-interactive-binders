@@ -18,7 +18,6 @@ from os import popen
 from pathlib import Path
 from typing import Iterator
 from zipfile import ZipFile
-import os
 
 import jdk
 from spanner_nlp.StanfordCoreNLP import StanfordCoreNLP
