@@ -12,7 +12,6 @@ import networkx as nx
 from abc import ABC, abstractmethod, ABCMeta
 from itertools import count
 from typing import Set, List, Dict, Iterable, Union, Optional, OrderedDict as OrderedDictType, no_type_check, Any, Sequence
-from IPython.display import Markdown, display
 from ..datatypes.ast_node_types import Relation, Rule, IERelation
 from spanner_workbench.src.rgxlog_interpreter.src.rgxlog.engine.utils.general_utils import get_input_free_var_names, get_output_free_var_names, \
     get_free_var_to_relations_dict

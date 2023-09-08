@@ -5,3 +5,8 @@ channels:
 dependencies:
   - ipycanvas
   - pandas
+  - jinja2
+  - jsonpath_ng
+  - networkx
+  - lark
+  - tabulate
