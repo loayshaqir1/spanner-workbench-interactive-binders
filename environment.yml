@@ -6,7 +6,7 @@ dependencies:
   - ipycanvas
   - pandas
   - jinja2
-  - jsonpath_ng
+  - jsonpath-ng
   - networkx
   - lark
   - tabulate
