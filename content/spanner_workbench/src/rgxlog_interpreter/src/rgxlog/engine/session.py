@@ -297,6 +297,9 @@ class Session:
                 query_results.append(query_result)
                 if print_results:
                     print(queries_to_string([query_result]))
+        
+        # This code will run in a jupyter notebook, so we will get output twice
+        return None
 
         if format_results:
             return [format_query_results(*query_result) for query_result in query_results]
