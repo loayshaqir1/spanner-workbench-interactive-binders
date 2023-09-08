@@ -29,8 +29,7 @@ jobs:
       
       - name: Install Rgxlog
         run: |
-          source activate
-          pip install -e content/spanner_workbench/rgxlog_interpreter/
+          python -m pip install -e content/spanner_workbench/rgxlog_interpreter/
 
       - name: Build the JupyterLite site
         shell: bash -l {0}
