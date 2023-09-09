@@ -36,7 +36,6 @@ from .state.graphs import TermGraph, NetxStateGraph, GraphBase, TermGraphBase
 from .state.symbol_table import SymbolTable, SymbolTableBase
 from .utils.general_utils import rule_to_relation_name, string_to_span, SPAN_PATTERN, QUERY_RESULT_PREFIX
 from .utils.passes_utils import LarkNode
-from ..stdlib.json_path import JsonPath, JsonPathFull
 
 # %% ../../../../../../nbs/19_session.ipynb 8
 CSV_DELIMITER = ";"
