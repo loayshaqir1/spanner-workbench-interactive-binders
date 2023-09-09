@@ -1,12 +1,6 @@
 from typing import Any
 
-import sys
-sys.path.append('/drive/spanner_workbench/src/rgxlog_interpreter/src/')
-sys.path.append('/drive/spanner_workbench/src/rgxlog_interpreter/src/rgxlog/')
-
-import rgxlog.engine
-import rgxlog.grammar
-from spanner_workbench.src.rgxlog_interpreter.src.rgxlog.engine.session import *
+from spanner_workbench.src.rgxlog_interpreter.src.rgxlog.engine.session import Session
 from rgxlog.magic.rgxlog_magic import RgxlogMagic
 from IPython import InteractiveShell, get_ipython
 
