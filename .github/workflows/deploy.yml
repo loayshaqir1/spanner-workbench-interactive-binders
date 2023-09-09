@@ -20,16 +20,16 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Install Rgxlog
+        run: |
+          python -m pip install -e content/spanner_workbench/src/rgxlog_interpreter
+
       - name: Install mamba
         uses: mamba-org/setup-micromamba@v1
         with:
           micromamba-version: '1.5.0-0'
           environment-file: build-environment.yml
           cache-environment: true
-      
-      - name: Install Rgxlog
-        run: |
-          python -m pip install -e content/spanner_workbench/src/rgxlog_interpreter
 
       - name: Build the JupyterLite site
         shell: bash -l {0}
