@@ -1,5 +1,9 @@
 from typing import Any
 
+import sys
+sys.path.append('/drive/spanner_workbench/src/rgxlog_interpreter/src/')
+sys.path.append('/drive/spanner_workbench/src/rgxlog_interpreter/src/rgxlog/')
+
 import rgxlog.engine
 import rgxlog.grammar
 from rgxlog.engine.session import Session
