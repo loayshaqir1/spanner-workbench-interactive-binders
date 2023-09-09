@@ -29,7 +29,7 @@ jobs:
           python -m pip install -e content/spanner_workbench/src/rgxlog_interpreter
       
       - name: Copy rgxlog_interpreter to site-packages
-        run: cp -r /drive/spanner_workbench/src/rgxlog_interpreter/src $(python -c "import site; print(site.getsitepackages()[0])")
+        run: cp -r content/spanner_workbench/src/rgxlog_interpreter/src $(python -c "import site; print(site.getsitepackages()[0])")
 
       - name: Install mamba
         uses: mamba-org/setup-micromamba@v1
